@@ -1,0 +1,29 @@
+.list-item {
+    display: flex;
+    max-width: 425px;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    border: 1px solid lightgrey;
+
+    .list-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .list-body {
+        flex: 4;
+        padding: 0 4px 0 8px;
+        
+        .list-title {
+            text-transform: capitalize;
+        }
+        .list-text {
+            font-size: 0.9em;
+        }
+    }
+}

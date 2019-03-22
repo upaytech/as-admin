@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductListItemComponent } from './product-list-item/product-list-item/product-list-item.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewProductFormComponent } from './new-product-form/new-product-form.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     ProductListItemComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    NewProductFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

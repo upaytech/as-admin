@@ -1,0 +1,30 @@
+.list-item {
+    display: flex;
+    max-width: 425px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-bottom: 1px solid lightgrey;
+    max-height: 4em;
+
+    .list-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    .list-body {
+        flex: 4;
+        padding: 0 4px 0 8px;
+        overflow: hidden;
+        
+        .list-title {
+            text-transform: capitalize;
+        }
+        .list-text {
+            font-size: 0.9em;
+        }
+    }
+}

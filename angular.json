@@ -27,9 +27,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/normalize.css/normalize.css",
+              "node_modules/materialize-css/dist/css/materialize.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/materialize-css/dist/js/materialize.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

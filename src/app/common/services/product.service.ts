@@ -13,9 +13,12 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   // todo : fetch products from backend service
-  getProducts(): Array<Product> {
+  // todo : change type any to a subset of product type, which will include only id and properties
+  // that are visible on the grid
+  getProducts(): Array<any> {
     // dummy data - return service result instead
     return [{
+      id: 1,
       name: 'abc',
       description: 'jsk ksjf vkhjkhdf',
       price: 123.45,
@@ -26,6 +29,7 @@ export class ProductService {
       imageUrls: []
     },
     {
+      id: 2,
       name: 'abc 2',
       description: 'jsk ksjf vkhjkhdf',
       price: 123.45,
@@ -36,6 +40,7 @@ export class ProductService {
       imageUrls: []
     },
     {
+      id: 3,
       name: 'abc 3',
       description: 'jsk ksjf vkhjkhdf',
       price: 123.45,
@@ -46,6 +51,7 @@ export class ProductService {
       imageUrls: []
     },
     {
+      id: 4,
       name: 'abc 4',
       description: 'jsk ksjf vkhjkhdf',
       price: 123.45,
@@ -56,6 +62,7 @@ export class ProductService {
       imageUrls: []
     },
     {
+      id: 5,
       name: 'abc 5',
       description: 'jsk ksjf vkhjkhdf',
       price: 123.45,

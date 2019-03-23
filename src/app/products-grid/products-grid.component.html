@@ -1,0 +1,26 @@
+<section class="products-grid">
+  <h4>All Products</h4>
+  <div class="product-grid">
+      <!-- suggestion : grid lib like ag-grid can be used instead of table to support grid 
+            operations like sorting and filtering -->
+      <table class="highlight">
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Upay Center</th>
+                <th>Price</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr *ngFor="let product of products" (click)="router.navigate(['/products', product.id])">
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.upayCenter}}</td>
+              <td>{{product.price}}</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+</section>

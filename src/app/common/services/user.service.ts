@@ -9,6 +9,6 @@ export class UserService {
 
   getProfilePicUrl(): string {
     // todo - return user profile pic url
-    return '../../../assets/images/user-placeholder.png';
+    return null;
   }
 }

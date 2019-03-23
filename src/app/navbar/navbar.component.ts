@@ -9,7 +9,9 @@ import { UserService } from '../common/services/user.service';
 export class NavbarComponent implements OnInit {
 
   dpUrl: string;
-  constructor(private userService: UserService) { }
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit() {
     this.dpUrl = this.userService.getProfilePicUrl();

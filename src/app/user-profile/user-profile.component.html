@@ -1,0 +1,7 @@
+<section class="user-profile">
+  <div class="greeting">
+    <img *ngIf="user.profilePicUrl" class="user-dp" src={{user.profilePicUrl}} />
+    <i *ngIf="!user.profilePicUrl" class="material-icons">face</i>
+    <h5>Hello, {{user.firstName}} {{user.lastName}} </h5>
+  </div>
+</section>
